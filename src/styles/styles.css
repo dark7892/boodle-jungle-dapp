@@ -1,0 +1,92 @@
+.container div.header{
+    display: flex;
+    background-color: yellow;
+}
+.container div.header ul{
+    align-items: center;
+    display: flex;
+}
+.container div.header ul li{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.container div.header ul li a{
+    text-decoration: none;
+}
+.container div.section1{
+    background-color: yellow;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.container div.section1 div.buy{
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.container div.section1 div.buy h1{
+    font-size: 75px;
+
+}
+.container div.section1 div.buy h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container div.section1 div.buy button.btn1{
+    background-color: #ebc908;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container div.section1 div.buy button.btn2{
+    background-color: #ebc908;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.container div.section1 img{
+    width: 30%;
+    height: 70%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.container div.section2{
+    background-color: #443e03;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.container div.section2 img{
+    width: 30%;
+    height: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.container div.section2 div.intro{
+    width: 40%;
+    margin-left: 200px;
+}
+.container div.section2 div.intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+.container div.section2 div.intro p{
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.container div.section2 div.intro h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 50px;
+}

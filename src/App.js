@@ -4,6 +4,8 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import './styles/styles.css';
+
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -194,18 +196,59 @@ function App() {
   }, [blockchain.account]);
 
   return (
-    <s.Screen>
+    <div>
+      <div className='container'>
+        <div className='header'>
+          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+          <ul>
+            <li><a href=''>HOME</a></li>
+            <li><a href=''>GRAB GALLERY</a></li>
+            <li><a href=''>THE RABBITS</a></li>
+            <li><a href=''>3D RABBITS</a></li>
+            <li><a href=''>P2E GAMES</a></li>
+          </ul>
+          <div>
+
+          </div>
+        </div>
+        <div className='section1'>
+          <div className='buy'>
+            <h1>CRYPTO RABBITS</h1>
+            <h3>A limited NFT collection where the token itself
+              doubles as your membership to a room for Rabbit. The
+              room is open! Rabbits in with us.
+            </h3>
+            <button className='btn1'>BUY NFT</button>
+            <button className='btn2'>RARITY TOOLS</button>
+          </div>
+          <img src='config/images/1.gif'></img>
+        </div>
+        <div className="section2">
+          <img src='config/images/1.gif'></img>
+          <div className="intro">
+            <h1>CRYPTO RABBITS NFT</h1>
+            <p>CRB is a collection of 10,000 Rabbits NFTs-unique digital collectibles living on the
+              Polygon blockchain.
+            </p>
+            <p>Your Crypto Rabbits doubles as your Room membership card, and grants access to members-only benefits, the first of which is access to THE RABBITS, a Forum Room. Future areas and perks can be unlocked by the community through roadmap activation.</p>
+
+            <h2>FAIR DISTRIBUTION</h2>
+            <p>There are no bonding curves here. Buying a Crypto Rabbits costs 5 MATIC. There are no price tiers; CRB membership costs the same for everyone.</p>
+          </div>
+        </div>
+      
+      </div>
+      <s.Screen>
       <s.Container
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        // image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <StyledImg alt={"example"} src={"/config/images/2.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -310,14 +353,15 @@ function App() {
                   </s.Container>
                 ) : (
                   <>
-                    <s.TextDescription
+                    {/* <s.TextDescription
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
                       }}
                     >
                       {feedback}
-                    </s.TextDescription>
+                    </s.TextDescription> */}
+                    <StyledImg alt={"example"} src={"/config/images/hidden_image.png"} />
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
@@ -373,7 +417,7 @@ function App() {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
-              src={"/config/images/example.gif"}
+              src={"/config/images/2.gif"}
               style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
@@ -404,6 +448,8 @@ function App() {
         </s.Container>
       </s.Container>
     </s.Screen>
+    </div>
+    
   );
 }
 
